@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treino</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Data tables -->
+    <link
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <!-- Data tables buttons -->
+    <link
+      href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+
+    table tr td {
+      text-align: center;
+    }
+
+    .bg-header-um {
+      background-color: #181c14 !important;
+      color: #fff !important;
+    }
+
+    .bg-header-dois {
+      background-color: #3c3d37 !important;
+      color: #fff !important;
+    }
+
+    .bg-header-tres {
+      background-color: #697565 !important;
+    }
+
+    .bg-header-quatro {
+      background-color: #ecdfcc !important;
+    }
+  </style>
+  <body class="bg-dark text-light">
+    <header class="mb-4">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: #e8b86d !important; color: #ffff !important"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-backpack3-fill"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Treino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dieta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="mx-4">
+      <!-- TREINO 1 -->
+      <table class="table table-striped table-hover table-bordered">
+        <tr>
+          <td class="bg-header-um" colspan="20"><b>TREINO 1</b></td>
+        </tr>
+        <tr>
+          <td colspan="20" class="bg-header-dois"><b>(QUADRÍCEPS)</b></td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Cadeira extensora</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>aquecimento</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>12 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Cadeira adutora</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 a 12 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Leg press</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Agachamento no Smith</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>8 a 10 movimentos</td>
+        </tr>
+
+        <!-- Segundo -->
+
+        <tr>
+          <td colspan="20" class="bg-header-dois">
+            <b>(FEMURAL + GLÚTEO)</b>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Cadeira flexora sentado</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Mesa Flexora</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Elevação Pélvica</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>12 a 15 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Cadeira Abdutora</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>15 movimentos</td>
+        </tr>
+      </table>
+
+      <table class="table table-striped table-hover table-bordered">
+        <tr>
+          <td class="bg-header-um" colspan="20"><b>TREINO 2</b></td>
+        </tr>
+        <tr>
+          <td colspan="20" class="bg-header-dois"><b>(PEITORAL + TRÍCEPS) </b></td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Pack dack (voador) </td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>20 movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Supino máquina hamer reto </td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Supino máquina hamer inclinado</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Tríceps testa barra W (deitado) </td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6 a 8 movimentos</td>
+        </tr>
+
+        <tr></tr>
+          <td class="bg-header-tres" colspan="20">Tríceps corda francês</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>15 movimentos</td>
+        </tr>
+
+        <!-- Segundo -->
+
+        <tr>
+          <td colspan="20" class="bg-header-dois">
+            <b> (DORSAL + BÍCEPS) </b>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Remada curvada com barra</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>6 a 8 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Puley frente</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>6 a 8 movimentos </td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Puley frente pegada triângulo</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>12 a 15 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Rosca direta com barra</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6 a 8 movimentos</td>
+        </tr>
+
+        <tr>
+          <td class="bg-header-tres" colspan="20">Rosca direta com halteres  banco inclinado</td>
+        </tr>
+        <tr>
+          <td class="bg-header-quatro">QTD Series</td>
+          <td class="bg-header-quatro">QTD Movimentos</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>10  movimentos</td>
+        </tr>
+      </table>
+
+      <table class="table table-striped table-hover table-bordered">
+          <tr>
+            <td class="bg-header-um" colspan="20"><b>TREINO 3</b></td>
+          </tr>
+          <tr>
+            <td colspan="20" class="bg-header-dois"><b>DELTOIDE + TRÍCEPS + BÍCEPS</b></td>
+          </tr>
+
+          <tr>
+            <td class="bg-header-tres" colspan="20">desenvolvimento smith</td>
+          </tr>
+          <tr>
+            <td class="bg-header-quatro">QTD Series</td>
+            <td class="bg-header-quatro">QTD Movimentos</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>20 movimentos</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>12 a 15 movimentos </td>
+          </tr>
+
+          <tr>
+              <td>2</td>
+              <td>6 movimentos</td>
+            </tr>
+
+          <tr>
+            <td class="bg-header-tres" colspan="20">elevação lateral</td>
+          </tr>
+          <tr>
+            <td class="bg-header-quatro">QTD Series</td>
+            <td class="bg-header-quatro">QTD Movimentos</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>10 x 10 x falha</td>
+          </tr>
+
+          <tr>
+            <td class="bg-header-tres" colspan="20">Desenvolvimento arnold + elevação frontal com barra</td>
+          </tr>
+          <tr>
+            <td class="bg-header-quatro">QTD Series</td>
+            <td class="bg-header-quatro">QTD Movimentos</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>12 x 12</td>
+          </tr>
+
+          <tr>
+            <td class="bg-header-tres" colspan="20">Posterior ombros no pack  dack sentado  + trapézio com halteres</td>
+          </tr>
+          <tr>
+            <td class="bg-header-quatro">QTD Series</td>
+            <td class="bg-header-quatro">QTD Movimentos</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>12 a 15 movimentos + 12 a  15 movimentos</td>
+          </tr>
+
+          <tr>
+            <td class="bg-header-tres" colspan="20">Tríceps testa inclinado</td>
+          </tr>
+          <tr>
+            <td class="bg-header-quatro">QTD Series</td>
+            <td class="bg-header-quatro">QTD Movimentos</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>6 a 8 movimentos</td>
+          </tr>
+
+          <tr>
+              <td class="bg-header-tres" colspan="20">Tríceps corda</td>
+            </tr>
+            <tr>
+              <td class="bg-header-quatro">QTD Series</td>
+              <td class="bg-header-quatro">QTD Movimentos</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>8 a 12 movimentos </td>
+            </tr>
+
+            <tr>
+              <td class="bg-header-tres" colspan="20">Tríceps francês</td>
+            </tr>
+            <tr>
+              <td class="bg-header-quatro">QTD Series</td>
+              <td class="bg-header-quatro">QTD Movimentos</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>6 a 8 movimentos </td>
+            </tr>
+
+            <tr>
+              <td class="bg-header-tres" colspan="20">Rosca direta 21 </td>
+            </tr>
+            <tr>
+              <td class="bg-header-quatro">QTD Series</td>
+              <td class="bg-header-quatro">QTD Movimentos</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>6 a 8 movimentos </td>
+            </tr>
+
+            <tr></tr>
+              <td class="bg-header-tres" colspan="20">Rosca scoth </td>
+            </tr>
+            <tr>
+              <td class="bg-header-quatro">QTD Series</td>
+              <td class="bg-header-quatro">QTD Movimentos</td>
+            </tr>
+            <tr>
+              <td>3 dropando</td>
+              <td>3 x 10, 10, até a falha</td>
+            </tr>
+          
+        </table>
+    </div>
+  </body>
+</html>
